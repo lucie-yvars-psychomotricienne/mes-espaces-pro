@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ee">
+
+  <title>Lucie Yvars · Psychomotricienne</title>
+  <meta
+    name="description"
+    content="Prenez rendez-vous avec Lucie Yvars, psychomotricienne, ou partagez votre expérience."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f6f4ee;
+      color: #293c37;
+      font-family: Arial, sans-serif;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 32px 24px;
+    }
+
+    main {
+      width: 100%;
+      max-width: 440px;
+      text-align: center;
+    }
+
+    .mark {
+      width: 92px;
+      height: 92px;
+      margin: 0 auto 30px;
+      position: relative;
+      display: grid;
+      place-items: center;
+    }
+
+    .mark::before,
+    .mark::after {
+      content: "";
+      position: absolute;
+      border: 1px solid #90a798;
+      border-radius: 48% 52% 60% 40%;
+      width: 78px;
+      height: 78px;
+      transform: rotate(-25deg);
+    }
+
+    .mark::after {
+      transform: rotate(35deg);
+      border-color: #c9b99c;
+      width: 62px;
+      height: 85px;
+    }
+
+    .mark span {
+      font-family: Georgia, serif;
+      font-size: 27px;
+      z-index: 1;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-weight: 400;
+      font-size: 40px;
+      letter-spacing: -1.3px;
+      margin: 0 0 10px;
+    }
+
+    .profession {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin: 0 0 46px;
+      color: #65796d;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      gap: 17px;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid #cad3c8;
+      border-radius: 16px;
+      padding: 22px;
+      margin: 14px 0;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    a:first-of-type {
+      background: #3e5c4e;
+      color: white;
+      border-color: #3e5c4e;
+    }
+
+    a:hover {
+      transform: translateY(-2px);
+      background: #e9ede4;
+    }
+
+    a:first-of-type:hover {
+      background: #314d40;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #a87e46;
+      outline-offset: 5px;
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+      flex-shrink: 0;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .label {
+      flex: 1;
+    }
+
+    .label strong {
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .label small {
+      display: block;
+      margin-top: 6px;
+      font-size: 12px;
+      opacity: 0.75;
+    }
+
+    .arrow {
+      font-size: 21px;
+      font-weight: 300;
+    }
+
+    footer {
+      margin: 36px 0 0;
+      font-size: 12px;
+      color: #788174;
+      letter-spacing: 0.3px;
+    }
+
+    @media (max-width: 360px) {
+      h1 {
+        font-size: 35px;
+      }
+
+      a {
+        padding: 20px 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">
+      <span>LY</span>
+    </div>
+
+    <h1>Lucie Yvars</h1>
+    <p class="profession">Psychomotricienne</p>
+
+    <a href="https://www.doctolib.fr/psychomotricien/tournan-en-brie/lucie-yvars-tournan-en-brie">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="5" width="18" height="16" rx="3"/>
+        <path d="M7 3v4m10-4v4M3 11h18m-13 5h2m4 0h2"/>
+      </svg>
+
+      <span class="label">
+        <strong>Prendre rendez-vous</strong>
+        <small>Sur Doctolib</small>
+      </span>
+
+      <span class="arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <a href="https://g.page/r/CWSVteeGaZD7ECE/review">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m12 3 2.8 5.7 6.3.9-4.6 4.5 1.1 6.3-5.6-3-5.6 3 1.1-6.3L3 9.6l6.2-.9Z"/>
+      </svg>
+
+      <span class="label">
+        <strong>Donner un avis</strong>
+        <small>Partager votre expérience sur Google</small>
+      </span>
+
+      <span class="arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <footer>Merci pour votre confiance.</footer>
+  </main>
+</body>
+</html>
